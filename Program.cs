@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using ToDoListApplication;
 
-Console.WriteLine(Environment.CurrentDirectory);
 
 string fileFullName = "C:\\Users\\Dell\\OneDrive\\Desktop\\CSharp-Task-Management-App\\Utils\\data.json";
 
