@@ -8,8 +8,6 @@ namespace ToDoListApplication
 
         private string _name;
 
-        private List<UserTask> _tasks;
-
         public User(string name, List<UserTask>? tasks = null)
         {
             Id = UniqueIdGenerator.GeterateUniqueId();
@@ -29,7 +27,7 @@ namespace ToDoListApplication
             }
         }
 
-        public string Name 
+        public string Name
         { 
             get { return _name; }
             set {
@@ -40,14 +38,7 @@ namespace ToDoListApplication
             } 
         }
 
-        public List<UserTask> Tasks {
-            get { 
-                return _tasks; 
-            }
-            private set { 
-                _tasks = value; 
-            } 
-        }
+        public List<UserTask> Tasks { get; private set; }
 
         public void ShowUserTasks()
         {
